@@ -12,6 +12,20 @@ body {
   line-height: 1.6;
 }
 
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeSlide 2s ease-out forwards;
+}
 /* Container Layout */
 .container {
   display: flex;
@@ -52,6 +66,8 @@ body {
   padding-left: 15px;
   border-radius: 5px;
 }
+
+
 
 /* Main Content */
 .main-content {
