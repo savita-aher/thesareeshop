@@ -1,77 +1,85 @@
-<!-- returnadetails.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Return & Shipping Policy</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Optional for styling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shipping Prices</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+.pricing-table {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+thead {
+  background-color: #0078D7;
+  color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+  </style>
 </head>
 <body>
-  
-    <h2 style="text-align: center;">Return & Shipping Policy</h2>
-  <table class="table table-bordered table-striped text-center">
-  <thead class="table-dark">
-    <tr>
-      <th>Region</th>
-      <th>Delivery Time</th>
-      <th>Shipping Cost</th>
-      <th>Free Shipping Threshold</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>United States</td>
-      <td>5–7 days</td>
-      <td>$10</td>
-      <td>Orders over $100</td>
-    </tr>
-    <tr>
-      <td>India</td>
-      <td>2–4 days</td>
-      <td>₹100</td>
-      <td>Orders over ₹2000</td>
-    </tr>
-    <tr>
-      <td>Europe</td>
-      <td>6–8 days</td>
-      <td>€12</td>
-      <td>Orders over €120</td>
-    </tr>
-    <tr>
-      <td>Australia</td>
-      <td>7–10 days</td>
-      <td>AUD 15</td>
-      <td>Orders over AUD 150</td>
-    </tr>
-  </tbody>
-</table>
-<style>
-    .table {
-      width: 90%;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-      border-collapse: collapse;
-    }
-
-    .table th,
-    .table td {
-      padding: 12px;
-      border: 1px solid #ccc;
-    }
-
-    .table thead {
-      background-color: #343a40;
-      color: white;
-    }
-
-    .table-striped tbody tr:nth-child(odd) {
-      background-color: #f9f9f9;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-  </style>
-<h2 style="text-align: center; color: blue;">Returns accepted within 7 days of delivery</h2>
+  <div class="pricing-table">
+    <h1>📦 Shipping Options</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Delivery Time</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ground Level Shipping</td>
+          <td>5-7 days</td>
+          <td>$10.00</td>
+        </tr>
+         <tr>
+          <td>Normal Shipping</td>
+          <td>3-5 days</td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td>Express Shipping</td>
+          <td>1-2 days</td>
+          <td>$25.00</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+  <h2 style="text-align: center; color: blue;">Returns accepted within 7 days of delivery</h2>
 </body>
 </html>
